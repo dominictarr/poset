@@ -1,5 +1,21 @@
 # poset
 
+experimental poset module
+
+Poset is an abstraction that fits neatly over
+trees, lists, and sets.
+
+The goal for this module is to create a simple API
+that can be used to mainpulate all of the above.
+
+included so far, is `./fs.js` and `./object.js`
+which adapt this module for operating on fs trees,
+and js objects.
+
+There are many other possibilities,
+such as HTMLElements, git commits, and many others.
+
+thanks to @jez0990 for introducing me to posets!
 
 ## API
 
