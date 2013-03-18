@@ -17,6 +17,10 @@ such as HTMLElements, git commits, and many others.
 
 thanks to @jez0990 for introducing me to posets!
 
+## Stability
+
+Experimental: Expect the unexpected. Please provide feedback on api and your use-case.
+
 ## API
 
 ### Node.ancestors()
