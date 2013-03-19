@@ -31,31 +31,44 @@ return a subposet of the poset that matches a property
 
 example: tree of directories
 
+``` js
 poset(fs).filter(function (e) {return e.isDirectory()})
+```
 
 tree of objects
 
+``` js
 poset(obj).filter(function (e) {return e && 'object' === typeof e})
+```
 
 ## traversals
 
-poset(fs).topological(function (item) {...})
-
+``` js
+//depth first
 poset(fs).depthFirst(function (item) {...})
 
+//width first
 poset(fs).widthFirst(function (item) {...})
 
+//leaves first
+poset(fs).topological(function (item) {...})
+
+//ancestors
 poset(fs).ancestors(function (item) {...})
 
+//bottom most ancestors
 poset(fs).roots(function (item) {...})
+```
+
 
 ## comparisons
 
+``` js
 item1.gt(item2) 
 item1.decendentOf(item2)
 item1.ancestorOf(item2)
-
 item1.concestor(item2)
+```
 
 ## License
 
